@@ -1,0 +1,2 @@
+D:/sltc/sem 06/CCS3351-Mobile Application Development/week 15/nic_decoder1/android/app/.cxx/Debug/2n4k2v2j/x86_64/CMakeFiles/edit_cache.dir
+D:/sltc/sem 06/CCS3351-Mobile Application Development/week 15/nic_decoder1/android/app/.cxx/Debug/2n4k2v2j/x86_64/CMakeFiles/rebuild_cache.dir
