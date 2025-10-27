@@ -1,196 +1,133 @@
-##### 🪪 NIC Decoder - Flutter Application
+NIC Decoder App
 
-##### 
+A Flutter-based mobile application developed for the CCS3351 Mobile Application Development final project.
+This app decodes the Sri Lankan National Identity Card (NIC) number to extract personal details such as Date of Birth, Gender, Age, and Voting Eligibility, supporting both old and new NIC formats.
 
-##### 👨‍💻 Developer
+Features
 
-##### Name: Thanusha Nadeeshan Akmeemana
+Input Screen — Enter NIC number and decode instantly.
 
-##### Student Index: 22ug1-0391
+Result Screen — Displays decoded details:
 
-##### Course: CCS3351 - Mobile Application Development
+NIC Type (Old or New)
 
-##### University: SLTC Research University
+Date of Birth
 
-##### 
+Day of the Week
 
-##### ---
+Age
 
-##### 
+Gender
 
-##### 📱 Project Overview
+Voting Eligibility (for old NICs)
 
-##### The NIC Decoder App is a Flutter-based mobile application that decodes the Sri Lankan National Identity Card (NIC) number to reveal key personal details such as:
+History Screen — View and delete previously decoded NICs.
 
-##### 
+Validation — Detects invalid or incorrectly formatted NIC numbers.
 
-##### \- NIC Type (Old or New)
+Local Storage — Stores decoded history using GetStorage.
 
-##### \- Date of Birth
+GetX Navigation — Smooth transitions between screens.
 
-##### \- Weekday of Birth
+Project Structure
+lib/
+│
+├── main.dart                   # Entry point of the app, initializes routes
+│
+├── controllers/
+│   └── nic_controller.dart     # GetX controller handling logic & state
+│
+├── screens/
+│   ├── input_screen.dart       # User input screen with NIC field
+│   ├── result_screen.dart      # Shows decoded NIC results
+│   └── history_screen.dart     # Displays decoding history
+│
+└── utils/
+    └── nic_decoder.dart        # Core NIC decoding logic
 
-##### \- Age
+Technologies Used
 
-##### \- Gender
+Flutter — UI Framework for mobile development.
 
-##### \- Voting Eligibility (for old NICs)
+Dart — Programming language used to build Flutter apps.
 
-##### 
+GetX — For state management, routing, and reactivity.
 
-##### This app uses Material UI for the interface and GetX for state management and navigation.
+GetStorage — Lightweight local database for persistent storage.
 
-##### 
+intl — For date formatting and weekday conversion.
 
-##### ---
+Installation & Setup
 
-##### 
+Follow these steps to run the app locally:
 
-##### 🧠 Features
+Clone the Repository
 
-##### ✅ Decode both Old (9-digit + letter) and New (12-digit) NIC formats
+git clone https://github.com/thanushanadeeshan/NIC-Decoder.git
 
-##### ✅ Automatically detect gender and voting eligibility
 
-##### ✅ Display date of birth, weekday, and age
+Navigate to the Project Folder
 
-##### ✅ Uses GetX for state management and page navigation
+cd NIC-Decoder
 
-##### ✅ Stores decoded NICs using GetStorage (local storage)
 
-##### ✅ Clear history option
+Install Dependencies
 
-##### ✅ Simple, clean Material Design UI
+flutter pub get
 
-##### 
 
-##### ---
+Run the Application
 
-##### 
+flutter run
 
-##### 🧩 Technologies Used
+Screens Overview
+Screen	Description
+Input Screen	Allows the user to enter a NIC number and decode it.
+Result Screen	Displays decoded NIC details (DOB, Gender, Age, etc.).
+History Screen	Shows stored decoding history with delete options.
+Lessons Learned
 
-##### \- Flutter (Frontend UI)
+Learned how GetX simplifies state management and navigation in Flutter.
 
-##### \- GetX (State management and navigation)
+Used the intl package to format and calculate dates from the NIC.
 
-##### \- intl (Date formatting)
+Implemented user input validation for NIC formats.
 
-##### \- GetStorage (Local data persistence)
+Stored decoded NIC data using GetStorage for local persistence.
 
-##### \- Material Design (UI/UX)
+Solved common Flutter issues with dependencies and Gradle setup.
 
-##### 
+Algorithm (Simplified)
 
-##### ---
+Get NIC input.
 
-##### 
+Detect if NIC is old (10 characters) or new (12 characters).
 
-##### ⚙️ Project Structure
+Extract year and day of year.
 
-##### 
+Determine gender (day > 500 → female).
 
-##### lib/
+Calculate date of birth and weekday.
 
-##### │
+Determine voting eligibility (for old NICs).
 
-##### ├── main.dart # App entry point
+Display results and save to history.
 
-##### │
+GitHub Repository
 
-##### ├── controllers/
+https://github.com/thanushanadeeshan/NIC-Decoder
 
-##### │ └── nic\_controller.dart # Business logic and state management
+Author
 
-##### │
+Thanusha Nadeeshan Akmeemana
+BSc (Hons) in Cyber Security — SLTC Research University
+Index No: 22ug1-0391
+Email: thanushanadeeshan1@gmail.com
 
-##### ├── utils/
+Phone: 0711604538
 
-##### │ └── nic\_decoder.dart # NIC decoding logic
+Submission Details
 
-##### │
-
-##### ├── screens/
-
-##### │ ├── input\_screen.dart # NIC input screen
-
-##### │ ├── result\_screen.dart # Display decoded results
-
-##### │ └── history\_screen.dart # Show history of decoded NICs
-
-##### │
-
-##### └── pubspec.yaml # Dependencies
-
-##### 
-
-##### 
-
-##### ---
-
-##### 
-
-##### 🚀 How to Run the Project
-
-##### 
-
-##### ```bash
-
-##### Clone the repository
-
-##### git clone https://github.com/thanushanadeeshan/NIC-Decoder.git
-
-##### 
-
-##### Navigate to project directory
-
-##### cd NIC-Decoder
-
-##### 
-
-##### Get dependencies
-
-##### flutter pub get
-
-##### 
-
-##### Run the app
-
-##### flutter run
-
-##### 
-
-##### 🧾 Lessons Learned
-
-##### 
-
-##### Simplified state management and navigation with GetX.
-
-##### 
-
-##### Used the intl package for date formatting and age calculation.
-
-##### 
-
-##### Implemented input validation and real-time feedback for NIC entry.
-
-##### 
-
-##### Used GetStorage for storing decoded NIC history locally.
-
-##### 
-
-##### Gained hands-on experience fixing Flutter/Gradle setup issues.
-
-##### 
-
-##### 📚 License
-
-##### 
-
-##### This project is created for academic purposes only.
-
-##### Unauthorized copying, modification, or redistribution is prohibited.
-
-##### 
-
+Course: CCS3351 - Mobile Application Development
+Project: Final Project — NIC Decoder App
+Submission Date: 2025/03/02
