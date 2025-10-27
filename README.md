@@ -1,132 +1,96 @@
-NIC Decoder App
+🪪 NIC Decoder App
 
 A Flutter-based mobile application developed for the CCS3351 Mobile Application Development final project.
-This app decodes the Sri Lankan National Identity Card (NIC) number to extract personal details such as Date of Birth, Gender, Age, and Voting Eligibility, supporting both old and new NIC formats.
+This app decodes the Sri Lankan National Identity Card (NIC) number to extract important details such as Date of Birth, Gender, Age, and Voting Eligibility, supporting both old and new NIC formats.
 
-Features
+🚀 Features
 
-Input Screen — Enter NIC number and decode instantly.
+- Input Screen: Allows users to enter the NIC number and decode it.
+- Result Screen: Displays decoded details including date of birth, weekday, age, gender, and NIC type.
+- History Screen: Saves previously decoded NICs and allows clearing history.
+- Validation: Detects and displays warnings for incorrect NIC formats.
+- Local Storage: Uses GetStorage to store decoded history locally.
+- Navigation: Powered by GetX for smooth screen transitions and state management.
 
-Result Screen — Displays decoded details:
+🧱 Project Structure
 
-NIC Type (Old or New)
-
-Date of Birth
-
-Day of the Week
-
-Age
-
-Gender
-
-Voting Eligibility (for old NICs)
-
-History Screen — View and delete previously decoded NICs.
-
-Validation — Detects invalid or incorrectly formatted NIC numbers.
-
-Local Storage — Stores decoded history using GetStorage.
-
-GetX Navigation — Smooth transitions between screens.
-
-Project Structure
 lib/
 │
-├── main.dart                   # Entry point of the app, initializes routes
+├── main.dart                    # Entry point of the app, initializes routes
 │
 ├── controllers/
-│   └── nic_controller.dart     # GetX controller handling logic & state
+│   └── nic_controller.dart      # Handles decoding logic, validation, and storage
 │
 ├── screens/
-│   ├── input_screen.dart       # User input screen with NIC field
-│   ├── result_screen.dart      # Shows decoded NIC results
-│   └── history_screen.dart     # Displays decoding history
+│   ├── input_screen.dart        # Input screen for NIC entry
+│   ├── result_screen.dart       # Shows decoded NIC results
+│   └── history_screen.dart      # Displays previously decoded NICs
 │
 └── utils/
-    └── nic_decoder.dart        # Core NIC decoding logic
+    └── nic_decoder.dart         # Core NIC decoding algorithm
 
-Technologies Used
+🧩 Technologies Used
 
-Flutter — UI Framework for mobile development.
+- Flutter – For building the app UI
+- Dart – Core programming language
+- GetX – State management and navigation
+- GetStorage – Persistent local storage
+- intl – For date formatting and weekday extraction
 
-Dart — Programming language used to build Flutter apps.
-
-GetX — For state management, routing, and reactivity.
-
-GetStorage — Lightweight local database for persistent storage.
-
-intl — For date formatting and weekday conversion.
-
-Installation & Setup
+📦 Installation & Setup
 
 Follow these steps to run the app locally:
 
-Clone the Repository
+1. Clone the Repository
+   git clone https://github.com/thanushanadeeshan/NIC-Decoder.git
 
-git clone https://github.com/thanushanadeeshan/NIC-Decoder.git
+2. Navigate to the Project Folder
+   cd NIC-Decoder
 
+3. Install Dependencies
+   flutter pub get
 
-Navigate to the Project Folder
+4. Run the Application
+   flutter run
 
-cd NIC-Decoder
+🖥️ Screens Overview
 
+Screen           Description
+Input Screen     Enter NIC number and decode it instantly.
+Result Screen    View decoded NIC details such as DOB, Gender, Age, etc.
+History Screen   Review and delete previously decoded NIC entries.
 
-Install Dependencies
+🧠 Lessons Learned
 
-flutter pub get
+- Learned how GetX simplifies state management and navigation in Flutter.
+- Used the intl package to handle date formatting and weekday names.
+- Implemented user input validation for accurate NIC decoding.
+- Used GetStorage for saving and retrieving local data.
+- Solved build and Gradle-related issues during Android setup.
 
+⚙️ Algorithm (Simplified)
 
-Run the Application
+1. Get NIC input from the user.
+2. Check if NIC format is old (10 digits) or new (12 digits).
+3. Extract birth year and day of year.
+4. Determine gender (if day > 500 → female).
+5. Calculate date of birth and weekday.
+6. Identify voting eligibility (for old NICs).
+7. Display results and save them to history.
 
-flutter run
+🌐 GitHub Repository
 
-Screens Overview
-Screen	Description
-Input Screen	Allows the user to enter a NIC number and decode it.
-Result Screen	Displays decoded NIC details (DOB, Gender, Age, etc.).
-History Screen	Shows stored decoding history with delete options.
-Lessons Learned
+GitHub - thanushanadeeshan/NIC-Decoder
 
-Learned how GetX simplifies state management and navigation in Flutter.
-
-Used the intl package to format and calculate dates from the NIC.
-
-Implemented user input validation for NIC formats.
-
-Stored decoded NIC data using GetStorage for local persistence.
-
-Solved common Flutter issues with dependencies and Gradle setup.
-
-Algorithm (Simplified)
-
-Get NIC input.
-
-Detect if NIC is old (10 characters) or new (12 characters).
-
-Extract year and day of year.
-
-Determine gender (day > 500 → female).
-
-Calculate date of birth and weekday.
-
-Determine voting eligibility (for old NICs).
-
-Display results and save to history.
-
-GitHub Repository
-
-https://github.com/thanushanadeeshan/NIC-Decoder
-
-Author
+👨‍💻 Author
 
 Thanusha Nadeeshan Akmeemana
 BSc (Hons) in Cyber Security — SLTC Research University
 Index No: 22ug1-0391
-Email: thanushanadeeshan1@gmail.com
+📧 Email: thanushanadeeshan1@gmail.com
+📞 Phone: 0711604538
 
-Phone: 0711604538
-
-Submission Details
+📅 Submission Details
 
 Course: CCS3351 - Mobile Application Development
 Project: Final Project — NIC Decoder App
