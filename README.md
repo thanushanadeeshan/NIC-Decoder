@@ -1,16 +1,16 @@
-##### \# 🪪 NIC Decoder - Flutter Application
+##### 🪪 NIC Decoder - Flutter Application
 
 ##### 
 
-##### \## 👨‍💻 Developer
+##### 👨‍💻 Developer
 
-##### \*\*Name:\*\* Thanusha Nadeeshan Akmeemana
+##### Name: Thanusha Nadeeshan Akmeemana
 
-##### \*\*Student Index:\*\* 22ug1-0391
+##### Student Index: 22ug1-0391
 
-##### \*\*Course:\*\* CCS3351 - Mobile Application Development
+##### Course: CCS3351 - Mobile Application Development
 
-##### \*\*University:\*\* SLTC Research University
+##### University: SLTC Research University
 
 ##### 
 
@@ -18,9 +18,9 @@
 
 ##### 
 
-##### \## 📱 Project Overview
+##### 📱 Project Overview
 
-##### The \*\*NIC Decoder App\*\* is a Flutter-based mobile application that decodes the \*\*Sri Lankan National Identity Card (NIC)\*\* number to reveal key personal details such as:
+##### The NIC Decoder App is a Flutter-based mobile application that decodes the Sri Lankan National Identity Card (NIC) number to reveal key personal details such as:
 
 ##### 
 
@@ -38,7 +38,7 @@
 
 ##### 
 
-##### This app uses \*\*Material UI\*\* for the interface and \*\*GetX\*\* for state management and navigation.
+##### This app uses Material UI for the interface and GetX for state management and navigation.
 
 ##### 
 
@@ -46,17 +46,17 @@
 
 ##### 
 
-##### \## 🧠 Features
+##### 🧠 Features
 
-##### ✅ Decode both \*\*Old (9-digit + letter)\*\* and \*\*New (12-digit)\*\* NIC formats
+##### ✅ Decode both Old (9-digit + letter) and New (12-digit) NIC formats
 
-##### ✅ Automatically detect \*\*gender\*\* and \*\*voting eligibility\*\*
+##### ✅ Automatically detect gender and voting eligibility
 
-##### ✅ Display \*\*date of birth\*\*, \*\*weekday\*\*, and \*\*age\*\*
+##### ✅ Display date of birth, weekday, and age
 
-##### ✅ Uses \*\*GetX\*\* for state management and page navigation
+##### ✅ Uses GetX for state management and page navigation
 
-##### ✅ Stores decoded NICs using \*\*GetStorage\*\* (local storage)
+##### ✅ Stores decoded NICs using GetStorage (local storage)
 
 ##### ✅ Clear history option
 
@@ -68,17 +68,17 @@
 
 ##### 
 
-##### \## 🧩 Technologies Used
+##### 🧩 Technologies Used
 
-##### \- \*\*Flutter\*\* (Frontend UI)
+##### \- Flutter (Frontend UI)
 
-##### \- \*\*GetX\*\* (State management and navigation)
+##### \- GetX (State management and navigation)
 
-##### \- \*\*intl\*\* (Date formatting)
+##### \- intl (Date formatting)
 
-##### \- \*\*GetStorage\*\* (Local data persistence)
+##### \- GetStorage (Local data persistence)
 
-##### \- \*\*Material Design\*\* (UI/UX)
+##### \- Material Design (UI/UX)
 
 ##### 
 
@@ -86,7 +86,7 @@
 
 ##### 
 
-##### \## ⚙️ Project Structure
+##### ⚙️ Project Structure
 
 ##### 
 
@@ -130,31 +130,31 @@
 
 ##### 
 
-##### \## 🚀 How to Run the Project
+##### 🚀 How to Run the Project
 
 ##### 
 
 ##### ```bash
 
-##### \# Clone the repository
+##### Clone the repository
 
 ##### git clone https://github.com/thanushanadeeshan/NIC-Decoder.git
 
 ##### 
 
-##### \# Navigate to project directory
+##### Navigate to project directory
 
 ##### cd NIC-Decoder
 
 ##### 
 
-##### \# Get dependencies
+##### Get dependencies
 
 ##### flutter pub get
 
 ##### 
 
-##### \# Run the app
+##### Run the app
 
 ##### flutter run
 
@@ -191,34 +191,6 @@
 ##### This project is created for academic purposes only.
 
 ##### Unauthorized copying, modification, or redistribution is prohibited.
-
-##### 
-
-##### 🧭 GitHub Repository
-
-##### 
-
-##### 🔗 NIC Decoder - GitHub Repository
-
-##### 
-
-##### 
-
-##### ---
-
-##### 
-
-##### 4️⃣ \*\*Save and close Notepad\*\*
-
-##### 
-
-##### 5️⃣ \*\*Add and commit the README file\*\*
-
-##### ```bash
-
-##### git add README.md
-
-##### git commit -m "Added detailed README for NIC Decoder project"
 
 ##### 
 
